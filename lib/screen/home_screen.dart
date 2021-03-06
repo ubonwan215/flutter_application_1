@@ -19,11 +19,18 @@ class _HomeScreenState extends State<HomeScreen> {
           title: Text("Home Project"),
         ),
         body: Center(
-          child: Container(
-              width: 450,
-              height: 250,
-              color: Colors.blue[200],
-              child: Image.asset('assets/images/cat.jpg')),
+          child: Column( 
+            children: [
+              Container(
+                color : Colors.brown,
+                child: Text("cattttt")),
+              Container(
+                  width: 350,
+                  height: 250,
+                  color: Colors.blue[200],
+                  child: Image.asset('assets/images/cat.jpg')),
+            ],
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
@@ -32,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(icon: Icon(Icons.phone), label: "phone"),
           ],
         ),
-      ),
+      ), 
     );
   }
 }
