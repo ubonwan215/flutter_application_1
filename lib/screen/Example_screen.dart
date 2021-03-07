@@ -19,27 +19,76 @@ class _ExampleState extends State<Example> {
           ),
           body: Center(
             child: Column(
-              mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
+                  
                   child: Column(
                     children: [
+                      Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("111"),
+                            PopupMenuButton(
+                              itemBuilder: (BuildContext context) {
+                                return [
+                                  PopupMenuItem(
+                                    child: Text("Wifi"),
+                                  ),
+                                  PopupMenuItem(
+                                    child: Text("Bluetooth"),
+                                  )
+                                ];
+                              },
+                            )
+                          ],
+                        ),
+                      ),
                       Container(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Container(
-                              width: 150,
-                              height: 150,
-                              color: Colors.blue[600],
-                              child: Text("1")
-                            ),
+                                width: 180,
+                                height: 180,
+                                color: Colors.pink,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment:MainAxisAlignment.center,
+                                  children: [
+                                    Text("1",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 32.0)),
+                                    Icon(
+                                      Icons.pivot_table_chart,
+                                      color: Colors.white,
+                                      size:50,
+                                    )
+                                  ],
+                                )),
                             Container(
-                              width: 150,
-                              height: 150,
-                              color: Colors.orange[600],
-                              child: Text("2")
-                            ),
+                                width: 180,
+                                height: 180,
+                                color: Colors.blue,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment:MainAxisAlignment.center,
+                                  children: [
+                                    Text("2",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 32.0)),
+                                    Icon(
+                                      Icons.pivot_table_chart,
+                                      color: Colors.white,
+                                      size:50,
+                                    )
+                                  ],
+                                )),
                           ],
                         ),
                       ),
@@ -54,17 +103,45 @@ class _ExampleState extends State<Example> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Container(
-                              width: 150,
-                              height: 150,
-                              color: Colors.teal[600],
-                              child: Text("3")
-                            ),
+                                width: 180,
+                                height: 180,
+                                color: Colors.green,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment:MainAxisAlignment.center,
+                                  children: [
+                                    Text("3",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 32.0)),
+                                    Icon(
+                                      Icons.pivot_table_chart,
+                                      color: Colors.white,
+                                      size:50,
+                                    )
+                                  ],
+                                )),
                             Container(
-                              width: 150,
-                              height: 150,
-                              color: Colors.grey[600],
-                              child: Text("4")
-                            ),
+                                width: 180,
+                                height: 180,
+                                color: Colors.red,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment:MainAxisAlignment.center,
+                                  children: [
+                                    Text("4",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 32.0)),
+                                    Icon(
+                                      Icons.pivot_table_chart,
+                                      color: Colors.white,
+                                      size:50,
+                                    )
+                                  ],
+                                )),
                           ],
                         ),
                       ),
